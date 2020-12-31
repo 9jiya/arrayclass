@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>array</title>
+    </head>
+    <body>
+        <center>
+            <h1>Fruits in Array</h1>
+            <h4 id="a"></h4>
+            <hr>
+            <h1>First Fruit in Array</h1>
+            <h4 id="b"></h4>
+            <hr>
+            <h1>Length of the array</h1>
+            <h4 id="o"></h4>
+            <hr>
+            <h1>For loop of the array</h1>
+            <h4 id="p"></h4>
+            <hr>
+            <h1>Add to Array</h1>
+            <h4 id="c"></h4>
+            <hr>
+            <h1>Delete from Array</h1>
+            <h4 id="d"></h4>
+            <hr>
+            <h1>Alphabets</h1>
+            <h4 id="e"></h4>
+            <hr>
+            <h1>Reverse Alphabets</h1>
+            <h4 id="h"></h4>
+            <hr>
+            <h1>Sort Alphabets</h1>
+            <h4 id="j"></h4>
+            <hr>
+        </center>
+    </body>
+    <script>
+        var f =["Grapes","Pineapple","Watermelon"];
+        console.log(f);
+        document.getElementById("a").innerHTML=f;
+        var g = f[0];
+        console.log(g);
+        document.getElementById("b").innerHTML=g;
+        f.push("Banana");
+        console.log(f);
+        document.getElementById("c").innerHTML=f;
+        f.pop("Banana");
+        console.log(f);
+        document.getElementById("d").innerHTML=f;
+        var r = ["a","b","c","d","e","f","g","h","i"];
+        console.log(r);
+        document.getElementById("e").innerHTML=r;
+        r.reverse();
+        console.log(r);
+        document.getElementById("h").innerHTML=r;
+        r.sort();
+        console.log(r);
+        document.getElementById("j").innerHTML=r;
+        var lf = f.length;
+        console.log(lf);
+        document.getElementById("o").innerHTML=lf;
+        var f1 = "";
+        for(i=0;i<f.length;i++){
+            console.log(f[i]);
+            f1=f1+f[i]+"<br>";
+        }
+        document.getElementById("p").innerHTML=f1;
+    </script>
+</html>
